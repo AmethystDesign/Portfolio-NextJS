@@ -33,10 +33,13 @@ const Footer = () => {
         </a>
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2025 Amethyst Design
-        </p>
-
+        <div className="flex align-middle gap-3">
+        {/* <p className="md:text-base text-sm md:font-normal font-light"> */}
+          <span>Copyright © 2025</span>
+          <img src="AD-logo.gif" alt="Amethyst Design" width={20} height={20} />
+          <span>Amethyst Design</span>
+        {/* </p> */}
+        </div>
         <div className="flex items-center md:gap-3 gap-6">
           {socialMedia.map((info) => (
             <a href={info.url} key={info.id}>

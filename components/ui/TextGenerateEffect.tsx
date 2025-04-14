@@ -6,9 +6,13 @@ import { cn } from "@/lib/utils";
 export const TextGenerateEffect = ({
   words,
   className,
+  secondFontColorIndexList,
+  fontColors
 }: {
   words: string;
   className?: string;
+  secondFontColorIndexList: number[];
+  fontColors: string[];
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
@@ -33,8 +37,8 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              // change here if idx is greater than 3, change the text color to #CBACF9
-              className={` ${idx > 3 ? "text-purple" : "dark:text-white text-black"
+              // change the text color to second color defined in the array
+              className={` ${secondFontColorIndexList.includes(idx) ? fontColors[0] : fontColors[1]
                 } opacity-0`}
             >
               {word}{" "}

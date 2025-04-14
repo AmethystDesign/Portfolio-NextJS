@@ -1,9 +1,19 @@
+import { m } from "framer-motion";
+
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
+
+export const heroInfo = {
+  name: "Jun L",
+  title: "Front-End Developer and Senior C#.NET Application Engineer",
+  secondFontColorIndexList: [1, 3],
+  subTitle: "Meet with",
+  info: "Hi! I'm Jun, a Software Engineer based in Toronto."
+}
 
 export const gridItems = [
   {
@@ -207,11 +217,11 @@ export const socialMedia = [
     img: "/git.svg",
     url: "www.linkedin.com/in/jun-liu-a16ba635/"
   },
-  {
-    id: 2,
-    img: "/twit.svg",
-    url: ""
-  },
+  // {
+  //   id: 2,
+  //   img: "/twit.svg",
+  //   url: ""
+  // },
   {
     id: 3,
     img: "/link.svg",
