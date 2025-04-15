@@ -55,9 +55,9 @@ const Hero = () => {
            */}
           <TextGenerateEffect
             words={heroInfo.title}
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            className={heroInfo.className}
             secondFontColorIndexList={heroInfo.secondFontColorIndexList}
-            fontColors={["text-purple", "dark:text-white text-black"]}
+            fontColors={heroInfo.fontColors}
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">

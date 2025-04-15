@@ -1,7 +1,10 @@
 import { FaLocationArrow } from "react-icons/fa6";
 
-import { socialMedia } from "@/data";
+import { footerInfo, heroInfo, socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
+import { TextGenerateEffect, TextGenerateTwoColors } from "./ui/TextGenerateEffect";
+
+const mailto = "mailto:" + heroInfo.email;
 
 const Footer = () => {
   return (
@@ -17,14 +20,15 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> digital
-          presence to the next level?
+          <TextGenerateTwoColors
+            words={footerInfo.question}
+            className={footerInfo.className}
+            secondFontColorIndexList={footerInfo.secondFontColorIndexList}
+            fontColors={footerInfo.fontColors}
+            ></TextGenerateTwoColors>
         </h1>
-        <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
-        </p>
-        <a href="mailto:amethystdesign@gmail.com">
+        <p className="text-white-200 md:mt-10 my-5 text-center">{footerInfo.suggestion}</p>
+        <a href={mailto}>
           <MagicButton
             title="Let's get in touch"
             icon={<FaLocationArrow />}
@@ -34,11 +38,9 @@ const Footer = () => {
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <div className="flex align-middle gap-3">
-        {/* <p className="md:text-base text-sm md:font-normal font-light"> */}
-          <span>Copyright © 2025</span>
-          <img src="AD-logo.gif" alt="Amethyst Design" width={20} height={20} />
-          <span>Amethyst Design</span>
-        {/* </p> */}
+          <span>Copyright © {heroInfo.publishDate}</span>
+          <img src={heroInfo.iconUrl} alt={heroInfo.organization} width={20} height={20} />
+          <span>{heroInfo.organization}</span>
         </div>
         <div className="flex items-center md:gap-3 gap-6">
           {socialMedia.map((info) => (

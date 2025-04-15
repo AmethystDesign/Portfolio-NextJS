@@ -10,24 +10,32 @@ export const navItems = [
 export const heroInfo = {
   name: "Jun L",
   title: "Front-End Developer and Senior C#.NET Application Engineer",
-  secondFontColorIndexList: [1, 3],
+  className: "text-center text-[40px] md:text-5xl lg:text-6xl",
+  fontColors: ["text-purple", "dark:text-white text-black"],
+  secondFontColorIndexList: [0, 4],
   subTitle: "Meet with",
-  info: "Hi! I'm Jun, a Software Engineer based in Toronto."
+  info: "Hi! I'm Jun, a Software Engineer based in Toronto.",
+  iconUrl: "https://avatars.githubusercontent.com/u/114815448",
+  organization: "Amethyst Design",
+  email: "amethystdesign@gmail.com",
+  publishDate: "2025"
 }
 
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    template: "FullImageBG",
+    title: "I prioritize project development and seamless user experiences",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "/programming.webp",
     spareImg: "",
   },
   {
     id: 2,
+    template: "FullImageBG",
     title: "I'm very flexible with time zone communications",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
@@ -38,8 +46,10 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
+    template: "Skills",
+    title: "My main tech stack",
     description: "I constantly try to improve",
+    items: "C#.NET,ReactJS,TypeScript,NextJS,Python,EMV,DevOps,FrontEnd",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -48,9 +58,10 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    // title: "Tech enthusiast with a passion for development.",
+    title: "Tech enthusiast with attention to detail and passion for delivering high-quality software.",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1 ",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "/grid.svg",
@@ -59,7 +70,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently building a Full-Stack Website",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -69,7 +80,8 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    template: "CopyEmail",
+    title: "Do you want to get more information?",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -228,3 +240,11 @@ export const socialMedia = [
     url: "www.github.com/AmethystDesign"
   },
 ];
+
+export const footerInfo = {
+  className: "text-center text-[40px] md:text-3xl lg:text-4xl",
+  question: "Ready to take your digital presence to the next level?",
+  secondFontColorIndexList: [3],
+  suggestion: "Reach out to me today and I can work with you to achieve your goals.",
+  fontColors: ["text-purple", "dark:text-white text-black"],
+}

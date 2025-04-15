@@ -11,6 +11,7 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
+import { heroInfo } from "@/data";
 
 export const BentoGrid = ({
   className,
@@ -35,9 +36,11 @@ export const BentoGrid = ({
 export const BentoGridItem = ({
   className,
   id,
+  template,
   title,
   description,
-  //   remove unecessary things here
+  items,
+  //   remove unnecessary things here
   img,
   imgClassName,
   titleClassName,
@@ -45,15 +48,15 @@ export const BentoGridItem = ({
 }: {
   className?: string;
   id: number;
+  template?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
+  items?: string;
   img?: string;
   imgClassName?: string;
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
 
   const [copied, setCopied] = useState(false);
 
@@ -67,10 +70,13 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
+    // const text = {heroInfo.email}; // "amethystdesign@gmail.com";
     const text = "amethystdesign@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
+
+  // console.log(items?.length);
 
   return (
     <div
@@ -125,13 +131,13 @@ export const BentoGridItem = ({
           )}
         >
           {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+          <div className="font-sans font-extralight lg:max-w-96 md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
             {description}
           </div>
           {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
           {/* remove mb-2 mt-2 */}
           <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+            className={`font-sans text-lg lg:text-2xl max-w-96 font-bold z-10`}
           >
             {title}
           </div>
@@ -140,11 +146,11 @@ export const BentoGridItem = ({
           {id === 2 && <GridGlobe />}
 
           {/* Tech stack list div */}
-          {id === 3 && (
+          {id === 3 &&  (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               {/* tech stack lists */}
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                {leftLists.map((item, i) => (
+                {items?.split(',').filter((_, i) => i % 2 === 0).map((item, i) => (
                   <span
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
@@ -157,7 +163,7 @@ export const BentoGridItem = ({
               </div>
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
-                {rightLists.map((item, i) => (
+                {items?.split(',').filter((_, i) => i % 2 !== 0).map((item, i) => (
                   <span
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
@@ -197,3 +203,4 @@ export const BentoGridItem = ({
     </div>
   );
 };
+

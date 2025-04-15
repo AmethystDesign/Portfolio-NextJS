@@ -7,7 +7,7 @@ export const TextGenerateEffect = ({
   words,
   className,
   secondFontColorIndexList,
-  fontColors
+  fontColors,
 }: {
   words: string;
   className?: string;
@@ -16,8 +16,9 @@ export const TextGenerateEffect = ({
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
+
   useEffect(() => {
-    console.log(wordsArray);
+    // console.log(wordsArray);
     animate(
       "span",
       {
@@ -56,6 +57,51 @@ export const TextGenerateEffect = ({
         {/* remove  text-2xl from the original */}
         <div className=" dark:text-white text-black leading-snug tracking-wide">
           {renderWords()}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+export const TextGenerateTwoColors = ({
+  words,
+  className,
+  secondFontColorIndexList,
+  fontColors,
+}: {
+  words: string;
+  className?: string;
+  secondFontColorIndexList: number[];
+  fontColors: string[];
+}) => {
+  let wordsArray = words.split(" ");
+
+  const twoColorsWords = () => {
+    return (
+      <div>
+        {wordsArray.map((word, idx) => {
+        return(
+          <span
+            key={word + idx}
+            className={` ${secondFontColorIndexList.includes(idx) ? fontColors[0] : fontColors[1]
+                }`}
+          >
+            {word}{" "}
+          </span>
+        );
+      })}
+      </div>
+    );
+  };
+
+  return (
+    <div className={cn("font-bold", className)}>
+      {/* mt-4 to my-4 */}
+      <div className="my-4">
+        {/* remove  text-2xl from the original */}
+        <div className=" dark:text-white text-black leading-snug tracking-wide">
+          {twoColorsWords()}
         </div>
       </div>
     </div>

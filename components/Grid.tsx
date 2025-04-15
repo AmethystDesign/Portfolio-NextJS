@@ -8,9 +8,11 @@ const Grid = () => {
         {gridItems.map((item, i) => (
           <BentoGridItem
             id={item.id}
+            template={item.template}
             key={i}
             title={item.title}
             description={item.description}
+            items={item.items}
             // remove icon prop
             // remove original classname condition
             className={item.className}
