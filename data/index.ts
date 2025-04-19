@@ -109,7 +109,7 @@ export const workExperiences = {
       img: "/we-amethystdesign-f2.png",
       // iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg"],
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/next.svg", "/icon_github.png", "/fm.svg"],
-      link: "amethystdesign.github.io/Brainwave-Frontend-React-Tailwind/",
+      link: "amethystdesign.github.io/Portfolio-NextJS/",
     },
     {
       id: 2,
