@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "deploy": "npm run build && gh-pages -d out"
+    "deploy": "vercel --prod"
   },
   "dependencies": {
     "@react-three/drei": "^9.105.4",
