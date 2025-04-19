@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 // import RecentProjects from "@/components/RecentProjects";
 import FloatingNav from "@/components/ui/FloatingNavbar";
 // import Certification from "@/components/Certification";
-// import WorkExperience from "@/components/WorkExperience";
+import WorkExperience from "@/components/WorkExperience";
 
 const Home = () => {
   return (
@@ -22,7 +22,7 @@ const Home = () => {
         <Hero />
         {/* <Grid /> */}
         {/* <RecentProjects /> */}
-        {/* <WorkExperience /> */}
+        <WorkExperience />
         {/* <Clients /> */}
         {/* <Experience /> */}
         {/* <Certification /> */}
