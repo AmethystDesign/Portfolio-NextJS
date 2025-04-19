@@ -13,20 +13,22 @@ export const commonTitleColors = ["text-purple", "dark:text-white text-black"];
 
 export const heroInfo = {
   name: "Jun L",
-  title: "Transforming initial concepts into fully realized, real-world software applications", // tailored for impact and scalability.",
+  title:
+    "Transforming initial concepts into fully realized, real-world software applications", // tailored for impact and scalability.",
   className: "text-center text-[40px] md:text-4xl lg:text-5xl",
   fontColors: ["text-purple", "dark:text-white text-black"],
   secondFontColorIndexList: [1, 5, 6],
   subTitle: "Dream it, Build it",
   info: "Hi! I'm Jun, Front-End Developer and Senior C#.NET Application Engineer based in Toronto.",
   email: "amethystdesign@gmail.com",
-}
+};
 
 export const gridItems = [
   {
     id: 1,
     template: "FullImageBG",
-    title: "Passionate software engineer with 10+ years of experience turning complex ideas into real-world applications. I specialize in C#.NET, React.js, and Next.js, with a strong focus on building real-time, multithreaded systems - especially in the retail and payment solutions space. \n\nI love solving problems through clean, efficient code and have a deep appreciation for OOP, algorithms, and scalable architecture. Whether it’s designing applications or debugging tough issues, I bring a detail-driven mindset and a passion for building reliable, high-quality software that makes an impact.",
+    title:
+      "Passionate software engineer with 10+ years of experience turning complex ideas into real-world applications. I specialize in C#.NET, React.js, and Next.js, with a strong focus on building real-time, multithreaded systems - especially in the retail and payment solutions space. \n\nI love solving problems through clean, efficient code and have a deep appreciation for OOP, algorithms, and scalable architecture. Whether it’s designing applications or debugging tough issues, I bring a detail-driven mindset and a passion for building reliable, high-quality software that makes an impact.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[50vh]",
     imgClassName: "w-full h-full",
@@ -60,7 +62,8 @@ export const gridItems = [
   {
     id: 4,
     // title: "Tech enthusiast with a passion for development.",
-    title: "Technology enthusiast focused on crafting innovative digital solutions",
+    title:
+      "Technology enthusiast focused on crafting innovative digital solutions",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1 ",
     imgClassName: "",
@@ -93,9 +96,9 @@ export const gridItems = [
 ];
 
 export const workExperiences = {
-   config: {
+  config: {
     className: "text-center text-[40px] md:text-3xl lg:text-5xl",
-    title: "Work experience",
+    title: "Work experiences",
     secondFontColorIndexList: [1],
     fontColors: ["text-blue-500", "dark:text-white text-black"],
     // fontColors: commonTitleColors,
@@ -105,41 +108,57 @@ export const workExperiences = {
       id: 1,
       company: "Amethyst Design",
       title: "Full Stack Website Developer",
-      responsibility: "Responsible for designing, developing, and maintaining visually appealing and user-centric websites.",
+      responsibility:
+        "Responsible for designing, developing, and maintaining visually appealing and user-centric websites.",
       img: "/we-amethystdesign-f2.png",
       // iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg"],
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/next.svg", "/icon_github.png", "/fm.svg"],
+      iconLists: [
+        "/re.svg",
+        "/tail.svg",
+        "/ts.svg",
+        "/next.svg",
+        "/icon_github.png",
+        "/fm.svg",
+      ],
       link: "amethystdesign.github.io/Portfolio-NextJS/",
     },
     {
       id: 2,
       company: "Verifone Inc. Canada",
       title: "Senior Software Engineer",
-      responsibility: "Involved in design, development, debugging and maintenance of payment solution for processing EMV and MSR transactions.",
+      responsibility:
+        "Involved in design, development, debugging and maintenance of payment solution for processing EMV and MSR transactions.",
       img: "/we-Verifone-f1.png",
-      iconLists: ["/VS-icon.svg", "/icon_github.png", "/dock.svg", "/icon-cs.svg"], //, "/stream.svg"
+      iconLists: [
+        "/VS-icon.svg",
+        "/icon_github.png",
+        "/dock.svg",
+        "/icon-cs.svg",
+      ], //, "/stream.svg"
       link: "www.verifone.com",
     },
     {
       id: 3,
       company: "eBridge connections Accounting Integration",
       title: "Mapping Specialist & Technical Support Software Developer",
-      responsibility: "Developed and Maintained customized Accounting Integration Platform (C#)",
-      img: "/we-ebridge-f1.png",
-      iconLists: ["/VS-icon.svg", "/icon-cs.svg"],  //, "/tail.svg", "/ts.svg", "/three.svg"
+      responsibility:
+        "Developed and Maintained customized Accounting Integration Platform (C#)",
+      img: "/we-eBridge-f1.png",
+      iconLists: ["/VS-icon.svg", "/icon-cs.svg"], //, "/tail.svg", "/ts.svg", "/three.svg"
       link: "info.jitterbit.com/ebridge-sage-guide.html",
     },
     {
       id: 4,
       company: "WS & Company Ltd.",
       title: "Application Developer and Technical Supporter",
-      responsibility: "Designed and developed the rk-Stores management system, involved in system analysis, development and maintenance. ",
+      responsibility:
+        "Designed and developed the rk-Stores management system, involved in system analysis, development and maintenance. ",
       img: "/we-WScompany-f1.png",
-      iconLists: ["/VS-icon.svg"],  //, "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"
+      iconLists: ["/VS-icon.svg"], //, "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"
       link: "www.wsandcompany.com/",
     },
-  ]
-}
+  ],
+};
 
 export const projects = [
   {
@@ -213,8 +232,8 @@ export const clients = {
   config: {
     className: "text-center text-[40px] md:text-3xl lg:text-5xl",
     title: "Kind words from satisfied clients",
-    secondFontColorIndexList: [3,4],
-    fontColors : commonTitleColors,
+    secondFontColorIndexList: [3, 4],
+    fontColors: commonTitleColors,
   },
   data: [
     {
@@ -248,7 +267,7 @@ export const clients = {
       nameImg: "/dockerName.svg",
     },
   ],
-}
+};
 
 export const workExperienceCards = {
   config: {
@@ -256,9 +275,9 @@ export const workExperienceCards = {
     title: "My work experiences",
     secondFontColorIndexList: [2],
     // fontColors: ["text-purple", "dark:text-white text-black"],
-    fontColors : commonTitleColors,
+    fontColors: commonTitleColors,
   },
-  data:[
+  data: [
     {
       id: 1,
       title: "Frontend Engineer Intern",
@@ -288,7 +307,7 @@ export const workExperienceCards = {
       thumbnail: "/exp4.svg",
     },
   ],
-}
+};
 
 export const approachSteps = {
   config: {
@@ -316,8 +335,10 @@ export const approachSteps = {
       iconCaption: "Phase 2",
       animationSpeed: 3,
       className: "bg-pink-900 rounded-3xl overflow-hidden",
-      color: [[255, 166, 158],
-              [221, 255, 247]],
+      color: [
+        [255, 166, 158],
+        [221, 255, 247],
+      ],
       dotSize: 2,
     },
     {
@@ -330,13 +351,13 @@ export const approachSteps = {
       color: [[125, 211, 252]],
       dotSize: 3,
     },
-  ]
-}
+  ],
+};
 
 export const certificationCards = {
   config: {
     className: "text-center text-[40px] md:text-3xl lg:text-5xl",
-    title: "License & Certifications",
+    title: "Licenses & Certifications",
     secondFontColorIndexList: [2],
     // fontColors: ["text-purple", "dark:text-white text-black"],
     fontColors: commonTitleColors,
@@ -372,7 +393,8 @@ export const certificationCards = {
     },
     {
       id: 5,
-      title: "PCEP™ - Python Institue® Certified Entry-Level Python Programmer",
+      title:
+        "PCEP™ - Python Institue® Certified Entry-Level Python Programmer",
       desc: "",
       className: "md:col-span-2",
       thumbnail: "/pcep.png",
@@ -412,7 +434,7 @@ export const certificationCards = {
       className: "md:col-span-2",
       thumbnail: "/PythanAI.png",
     },
-  ]
+  ],
 };
 
 export const footerInfo = {
@@ -427,13 +449,13 @@ export const footerInfo = {
     iconUrl: "https://avatars.githubusercontent.com/u/114815448",
     organization: "Amethyst Design",
     email: "amethystdesign@gmail.com",
-    publishDate: "2025"
+    publishDate: "2025",
   },
   socialMedia: [
     {
       id: 1,
       img: "/git.svg",
-      url: "www.linkedin.com/in/jun-liu-a16ba635/"
+      url: "www.linkedin.com/in/jun-liu-a16ba635/",
     },
     // {
     //   id: 2,
@@ -443,7 +465,7 @@ export const footerInfo = {
     {
       id: 3,
       img: "/link.svg",
-      url: "www.github.com/AmethystDesign"
+      url: "www.github.com/AmethystDesign",
     },
-  ]
+  ],
 };
