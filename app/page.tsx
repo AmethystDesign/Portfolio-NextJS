@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import { navItems } from "@/data";
 
@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 import Approach from "@/components/Approach";
 // import Experience from "@/components/Experience";
 // import RecentProjects from "@/components/RecentProjects";
-import { FloatingNav } from "@/components/ui/FloatingNavbar";
+import FloatingNav from "@/components/ui/FloatingNavbar";
 import Certification from "@/components/Certification";
 import WorkExperience from "@/components/WorkExperience";
 

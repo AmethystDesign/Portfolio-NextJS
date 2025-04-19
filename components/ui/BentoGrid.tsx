@@ -1,3 +1,5 @@
+"use client"
+
 import { AwaitedReactNode, JSXElementConstructor, Key, ReactElement, ReactNode, ReactPortal, useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
