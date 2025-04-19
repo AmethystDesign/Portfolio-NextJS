@@ -1,12 +1,12 @@
 import { FaLocationArrow } from "react-icons/fa6";
 
-import { footerInfo, heroInfo, socialMedia } from "@/data";
+import { footerInfo } from "@/data";
 import MagicButton from "./MagicButton";
-import { TextGenerateEffect, TextGenerateTwoColors } from "./ui/TextGenerateEffect";
-
-const mailto = "mailto:" + heroInfo.email;
+import { TextGenerateTwoColors } from "./ui/TextGenerateEffect";
 
 const Footer = () => {
+  const { config, builder, socialMedia } = footerInfo;
+  const mailto = "mailto:" + builder.email;
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       {/* background grid */}
@@ -20,14 +20,9 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          <TextGenerateTwoColors
-            words={footerInfo.question}
-            className={footerInfo.className}
-            secondFontColorIndexList={footerInfo.secondFontColorIndexList}
-            fontColors={footerInfo.fontColors}
-            ></TextGenerateTwoColors>
+          <TextGenerateTwoColors config = { config} />
         </h1>
-        <p className="text-white-200 md:mt-10 my-5 text-center">{footerInfo.suggestion}</p>
+        <p className="text-white-200 md:mt-10 my-5 text-center">{builder.desc}</p>
         <a href={mailto}>
           <MagicButton
             title="Let's get in touch"
@@ -38,12 +33,12 @@ const Footer = () => {
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <div className="flex align-middle gap-3">
-          <span>Copyright © {heroInfo.publishDate}</span>
-          <img src={heroInfo.iconUrl} alt={heroInfo.organization} width={20} height={20} />
-          <span>{heroInfo.organization}</span>
+          <span>Copyright © {builder.publishDate}</span>
+          <img src={builder.iconUrl} alt={builder.organization} width={20} height={20} />
+          <span>{builder.organization}</span>
         </div>
         <div className="flex items-center md:gap-3 gap-6">
-          {socialMedia.map((info) => (
+          {footerInfo.socialMedia.map((info) => (
             <a href={info.url} key={info.id}>
               <div
                 className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"

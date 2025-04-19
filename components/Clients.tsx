@@ -2,15 +2,19 @@
 
 import React from "react";
 
-import { companies, testimonials } from "@/data";
+import { clients, testimonials } from "@/data";
 import { InfiniteMovingCards } from "./ui/InfiniteCards";
+import { TextGenerateTwoColors } from "./ui/TextGenerateEffect";
 
 const Clients = () => {
+  const { config, data } = clients;
+
   return (
     <section id="testimonials" className="py-20">
       <h1 className="heading">
-        Kind words from
-        <span className="text-purple"> satisfied clients</span>
+        <TextGenerateTwoColors
+          config = {config}
+        ></TextGenerateTwoColors>
       </h1>
 
       <div className="flex flex-col items-center max-lg:mt-10">
@@ -26,18 +30,18 @@ const Clients = () => {
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10">
-          {companies.map((company) => (
-            <React.Fragment key={company.id}>
+          {data.map((client) => (
+            <React.Fragment key={client.id}>
               <div className="flex md:max-w-60 max-w-32 gap-2">
                 <img
-                  src={company.img}
-                  alt={company.name}
+                  src={client.img}
+                  alt={client.name}
                   className="md:w-10 w-5"
                 />
                 <img
-                  src={company.nameImg}
-                  alt={company.name}
-                  width={company.id === 4 || company.id === 5 ? 100 : 150}
+                  src={client.nameImg}
+                  alt={client.name}
+                  width={client.id === 4 || client.id === 5 ? 100 : 150}
                   className="md:w-24 w-20"
                 />
               </div>

@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { TitleConfig } from "@/types/customTypes";
 
 export const TextGenerateEffect = ({
   words,
@@ -63,19 +64,8 @@ export const TextGenerateEffect = ({
   );
 };
 
-
-export const TextGenerateTwoColors = ({
-  words,
-  className,
-  secondFontColorIndexList,
-  fontColors,
-}: {
-  words: string;
-  className?: string;
-  secondFontColorIndexList: number[];
-  fontColors: string[];
-}) => {
-  let wordsArray = words.split(" ");
+export const TextGenerateTwoColors = ({ config }: { config:  TitleConfig }) => {
+  const wordsArray = config.title.split(" ");
 
   const twoColorsWords = () => {
     return (
@@ -84,8 +74,7 @@ export const TextGenerateTwoColors = ({
         return(
           <span
             key={word + idx}
-            className={` ${secondFontColorIndexList.includes(idx) ? fontColors[0] : fontColors[1]
-                }`}
+            className={` ${config.secondFontColorIndexList.includes(idx) ? config.fontColors[0] : config.fontColors[1]}`}
           >
             {word}{" "}
           </span>
@@ -96,7 +85,7 @@ export const TextGenerateTwoColors = ({
   };
 
   return (
-    <div className={cn("font-bold", className)}>
+    <div className={cn("font-bold", config.className)}>
       {/* mt-4 to my-4 */}
       <div className="my-4">
         {/* remove  text-2xl from the original */}

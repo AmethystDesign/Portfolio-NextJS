@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { AwaitedReactNode, JSXElementConstructor, Key, ReactElement, ReactNode, ReactPortal, useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
 // Also install this npm i --save-dev @types/react-lottie
@@ -49,8 +49,8 @@ export const BentoGridItem = ({
   className?: string;
   id: number;
   template?: string;
-  title?: string | React.ReactNode;
-  description?: string | React.ReactNode;
+  title?: string;
+  description?: string;
   items?: string;
   img?: string;
   imgClassName?: string;
@@ -69,10 +69,10 @@ export const BentoGridItem = ({
     },
   };
 
+
   const handleCopy = () => {
-    // const text = {heroInfo.email}; // "amethystdesign@gmail.com";
-    const text = "amethystdesign@gmail.com";
-    navigator.clipboard.writeText(text);
+    const text = heroInfo.email; // "amethystdesign@gmail.com";
+     navigator.clipboard.writeText(text);
     setCopied(true);
   };
 
@@ -89,8 +89,7 @@ export const BentoGridItem = ({
         //   add these two
         //   you can generate the color from here https://cssgradient.io/
         background: "rgb(4,7,29)",
-        backgroundColor:
-          "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+        backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
       {/* add img divs */}
@@ -137,9 +136,14 @@ export const BentoGridItem = ({
           {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
           {/* remove mb-2 mt-2 */}
           <div
-            className={`font-sans text-lg lg:text-2xl max-w-96 font-bold z-10`}
+            className={`font-sans text-lg lg:text-2xl max-w-196 font-bold z-10`}
           >
-            {title}
+            {title?.split('\n').map((line: string, i: number) => (
+              <span key={i}>
+                {line}
+                <br />
+              </span>
+            ))}
           </div>
 
           {/* for the github 3d globe */}
