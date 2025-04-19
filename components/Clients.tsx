@@ -12,9 +12,7 @@ const Clients = () => {
   return (
     <section id="testimonials" className="py-20">
       <h1 className="heading">
-        <TextGenerateTwoColors
-          config = {config}
-        ></TextGenerateTwoColors>
+        <TextGenerateTwoColors config = {config} />
       </h1>
 
       <div className="flex flex-col items-center max-lg:mt-10">

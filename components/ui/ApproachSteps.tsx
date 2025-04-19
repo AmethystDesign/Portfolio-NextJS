@@ -118,7 +118,7 @@ const ApproachCard = ({
 };
 
 // add order prop for the Phase number change
-const AceternityIcon = ({ order }: { order: string , id: number}) => {
+const AceternityIcon = ({ order }: { order: string}) => {
   return (
     <div>
       {/* this btn is from https://ui.aceternity.com/components/tailwindcss-buttons border magic */}
