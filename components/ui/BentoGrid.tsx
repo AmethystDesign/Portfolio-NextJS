@@ -11,8 +11,11 @@ import {
 } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
+// ---------------   FAILED TO BUILD ON SERVER ----------------
 // Also install this npm i --save-dev @types/react-lottie
 // import Lottie from "react-lottie";
+// ---------------   FAILED TO BUILD ON SERVER ----------------
+// Also install this npm install lottie-react
 import Lottie from "lottie-react";
 
 import { cn } from "@/lib/utils";
@@ -209,8 +212,12 @@ export const BentoGridItem = ({
                 }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
-                {/* <Lottie options={defaultOptions} height={200} width={400} /> */}
-                <Lottie animationData={animationData} loop={true} />
+
+                {/*
+                ---------------   FAILED TO BUILD ON SERVER ----------------
+                <Lottie options={defaultOptions} height={200} width={400} />
+                {/* <Lottie animationData={animationData} loop={false} /> 
+                */}
               </div>
 
               <MagicButton
