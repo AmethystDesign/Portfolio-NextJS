@@ -120,7 +120,7 @@ export const workExperiences = {
         "/icon_github.png",
         "/fm.svg",
       ],
-      link: "amethystdesign.github.io/Portfolio-NextJS/",
+      link: "portfolio-amethystdesigns-projects.vercel.app",
     },
     {
       id: 2,
