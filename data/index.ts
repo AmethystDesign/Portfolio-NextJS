@@ -455,7 +455,7 @@ export const footerInfo = {
     {
       id: 1,
       img: "/git.svg",
-      url: "www.linkedin.com/in/jun-liu-a16ba635/",
+      url: "https://github.com/AmethystDesign",
     },
     // {
     //   id: 2,
@@ -465,7 +465,7 @@ export const footerInfo = {
     {
       id: 3,
       img: "/link.svg",
-      url: "www.github.com/AmethystDesign",
+      url: "https://www.linkedin.com/in/jun-liu-a16ba635/",
     },
   ],
 };
