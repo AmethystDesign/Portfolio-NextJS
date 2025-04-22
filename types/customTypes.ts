@@ -33,13 +33,13 @@ export type StepItem = {
   dotSize: number;
 };
 
-export type StepData ={
+export type StepData = {
   config: TitleConfig;
-  data: StepItem[]
+  data: StepItem[];
 };
 
 export type StepDataProps = {
-  stepList: StepData; 
+  stepList: StepData;
 };
 
 export type ClientItem = {
@@ -59,11 +59,26 @@ export type ExperienceItem = {
   link: string;
 };
 
-export type ExperienceData ={
+export type ExperienceData = {
   config: TitleConfig;
-  data: ExperienceItem[]
+  data: ExperienceItem[];
 };
 
 export type ExperienceDataProps = {
-  experienceList: ExperienceData; 
+  experienceList: ExperienceData;
+};
+
+export type ProjectInfo = {
+  id: number;
+  project: string;
+  description: string;
+  img: string;
+  iconLists: string[];
+  link: string;
+};
+
+export type ShowcaseLayoutSetting = {
+  boardClassName: string;
+  imgMaxSize: number[];
+  descWidth: string;
 };

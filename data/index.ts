@@ -120,7 +120,7 @@ export const workExperiences = {
         "/icon_github.png",
         "/fm.svg",
       ],
-      link: "portfolio-amethystdesigns-projects.vercel.app",
+      link: "https://profolio-amethystdesign.vercel.app",
     },
     {
       id: 2,
@@ -135,7 +135,7 @@ export const workExperiences = {
         "/dock.svg",
         "/icon-cs.svg",
       ], //, "/stream.svg"
-      link: "www.verifone.com",
+      link: "http://www.verifone.com",
     },
     {
       id: 3,
@@ -145,7 +145,7 @@ export const workExperiences = {
         "Developed and Maintained customized Accounting Integration Platform (C#)",
       img: "/we-eBridge-f1.png",
       iconLists: ["/VS-icon.svg", "/icon-cs.svg"], //, "/tail.svg", "/ts.svg", "/three.svg"
-      link: "info.jitterbit.com/ebridge-sage-guide.html",
+      link: "http://info.jitterbit.com/ebridge-sage-guide.html",
     },
     {
       id: 4,
@@ -155,7 +155,7 @@ export const workExperiences = {
         "Designed and developed the rk-Stores management system, involved in system analysis, development and maintenance. ",
       img: "/we-WScompany-f1.png",
       iconLists: ["/VS-icon.svg"], //, "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"
-      link: "www.wsandcompany.com/",
+      link: "http://www.wsandcompany.com/",
     },
   ],
 };
@@ -228,6 +228,148 @@ export const testimonials = [
   },
 ];
 
+export const works = {
+  config: {
+    className: "text-center text-[40px] md:text-3xl lg:text-5xl",
+    title: "Curated works showcasing my design and development expertise",
+    secondFontColorIndexList: [4, 6],
+    fontColors: commonTitleColors,
+  },
+  layoutSetting: {
+    boardClassName: "sm:max-[300px] md:max-[600px] lg:max-w-[800px]",
+    imgMaxSize: [380, 380],
+    descWidth: "sm:max-w-[150px] md:max-w-[400px] lg:max-w-[500px]",
+  },
+  data: [
+    {
+      id: 1,
+      project: "Portfolio",
+      description:
+        "A curated portfolio showcasing modern web development projects with a focus on responsive design, interactive user interfaces, and performance-driven architecture using React.js, Next.js, and Tailwind CSS.",
+      img: "we-amethystdesign.png",
+      iconLists: [
+        "/re.svg",
+        "/tail.svg",
+        "/ts.svg",
+        "/next.svg",
+        "/icon_github.png",
+      ],
+      link: "https://portfolio-amethystdesign.vercel.app/",
+    },
+    {
+      id: 2,
+      project: "Brainwave",
+      description:
+        "Demonstrates the creation of modern websites featuring sleek parallax effects and bento box layouts — covering everything from elegant UI design to mobile-first principles, while sharpening React.js and Tailwind CSS skills.",
+      img: "we-Brainwave.png",
+      iconLists: [
+        "/re.svg",
+        "/tail.svg",
+        "/ts.svg",
+        "/next.svg",
+        "/icon_github.png",
+        "/fm.svg",
+      ],
+      link: "https://brainwave-amethystdesign.vercel.app/",
+    },
+    {
+      id: 3,
+      project: "Verdant Vibe",
+      description:
+        "A user-friendly online shopping platform that allows customers to browse products, add them to a cart, and seamlessly manage their purchases with a smooth checkout experience.",
+      img: "we-VerdantVibe.png",
+      iconLists: ["/re.svg", "/tail.svg", "/icon_github.png"],
+      link: "https://verdantvibe-amethystdesign.vercel.app/",
+    },
+  ],
+  resource: [
+    {
+      id: 1,
+      name: "VS Code",
+      img: "/logo-VScode.svg",
+      nameImg: "/VScodeName.svg",
+      nameImgLength: 80,
+    },
+    {
+      id: 2,
+      name: "GitHub",
+      img: "/icon_github.png",
+      nameImg: "/GitHubName.svg",
+      nameImgLength: 70,
+    },
+    {
+      id: 3,
+      name: "React",
+      img: "/re.svg",
+      nameImg: "/ReactName.svg",
+      nameImgLength: 80,
+    },
+    {
+      id: 4,
+      name: "Next",
+      img: "/next.svg",
+      nameImg: "/NextJsName.svg",
+      nameImgLength: 70,
+    },
+    {
+      id: 5,
+      name: "TailWind",
+      img: "/tail.svg",
+      nameImg: "/TailName.svg",
+      nameImgLength: 80,
+    },
+    // {
+    //   id: 2,
+    //   name: "cloudinary",
+    //   img: "/cloud.svg",
+    //   nameImg: "/cloudName.svg",
+    //   nameImgLength: 140,
+    // },
+    // {
+    //   id: 3,
+    //   name: "appwrite",
+    //   img: "/app.svg",
+    //   nameImg: "/appName.svg",
+    //   nameImgLength: 140,
+    // },
+    // {
+    //   id: 4,
+    //   name: "HOSTINGER",
+    //   img: "/host.svg",
+    //   nameImg: "/hostName.svg",
+    //   nameImgLength: 150,
+    // },
+    {
+      id: 6,
+      name: "vite",
+      img: "/logo-vite.svg",
+      nameImg: "/ViteName.svg",
+      nameImgLength: 30,
+    },
+    // {
+    //   id: 4,
+    //   name: "stream",
+    //   img: "/s.svg",
+    //   nameImg: "/streamName.svg",
+    // nameImgLength: 100,
+    // },
+    {
+      id: 7,
+      name: "docker",
+      img: "/dock.svg",
+      nameImg: "/dockerName.svg",
+      nameImgLength: 70,
+    },
+    {
+      id: 8,
+      name: "Vercel",
+      img: "/logo-Vercel-grey.svg",
+      nameImg: "/NameVercel.svg",
+      nameImgLength: 70,
+    },
+  ],
+};
+
 export const clients = {
   config: {
     className: "text-center text-[40px] md:text-3xl lg:text-5xl",
@@ -241,30 +383,35 @@ export const clients = {
       name: "cloudinary",
       img: "/cloud.svg",
       nameImg: "/cloudName.svg",
+      nameImgLength: 100,
     },
     {
       id: 2,
       name: "appwrite",
       img: "/app.svg",
       nameImg: "/appName.svg",
+      nameImgLength: 100,
     },
     {
       id: 3,
       name: "HOSTINGER",
       img: "/host.svg",
       nameImg: "/hostName.svg",
+      nameImgLength: 100,
     },
     {
       id: 4,
       name: "stream",
       img: "/s.svg",
       nameImg: "/streamName.svg",
+      nameImgLength: 150,
     },
     {
       id: 5,
       name: "docker.",
       img: "/dock.svg",
       nameImg: "/dockerName.svg",
+      nameImgLength: 150,
     },
   ],
 };
@@ -393,8 +540,7 @@ export const certificationCards = {
     },
     {
       id: 5,
-      title:
-        "PCEP™ - Python Institue® Certified Entry-Level Python Programmer",
+      title: "PCEP™ - Python Institue® Certified Entry-Level Python Programmer",
       desc: "",
       className: "md:col-span-2",
       thumbnail: "/pcep.png",
