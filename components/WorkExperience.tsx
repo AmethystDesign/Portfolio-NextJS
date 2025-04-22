@@ -61,8 +61,8 @@ const WorkExperience = () => {
                 </p>
 
                 <div className="flex items-center justify-between mt-7 mb-3">
-                  {/* <ListIcons iconLists={item.iconLists} /> */}
-                  <div className="flex items-center">
+                  <ListIcons iconLists={item.iconLists} />
+                  {/* <div className="flex items-center">
                     {item.iconLists.map((icon: string, index: number) => (
                       <div
                         key={index}
@@ -80,7 +80,7 @@ const WorkExperience = () => {
                         />
                       </div>
                     ))}
-                  </div>
+                  </div> */}
                   <CheckLiveSite
                     link={item.link}
                     id={item.id}
