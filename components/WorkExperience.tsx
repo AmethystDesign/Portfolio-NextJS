@@ -61,7 +61,26 @@ const WorkExperience = () => {
                 </p>
 
                 <div className="flex items-center justify-between mt-7 mb-3">
-                  <ListIcons iconLists={item.iconLists} />
+                  {/* <ListIcons iconLists={item.iconLists} /> */}
+                  <div className="flex items-center">
+                    {item.iconLists.map((icon: string, index: number) => (
+                      <div
+                        key={index}
+                        className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                        style={{
+                          transform: `translateX(-${5 * index + 2}px)`,
+                        }}
+                      >
+                        <img
+                          src={icon}
+                          alt="icon"
+                          // width={"20px"}
+                          // height={"20px"}
+                          className="p-2"
+                        />
+                      </div>
+                    ))}
+                  </div>
                   <CheckLiveSite
                     link={item.link}
                     id={item.id}

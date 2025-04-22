@@ -9,12 +9,18 @@ export const ListIcons = ({ iconLists }: { iconLists: string[] }) => {
         {iconLists.map((icon: string, index: number) => (
           <div
             key={index}
-            className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+            className="border border-white/[.2] rounded-full bg-black lg:w-12 lg:h-12 w-8 h-8 flex justify-center items-center"
             style={{
               transform: `translateX(-${5 * index + 2}px)`,
             }}
           >
-            <img src={icon} alt="icon5" className="p-2" />
+            <img
+              src={icon}
+              alt="icon"
+              // width={"20px"}
+              // height={"20px"}
+              className="p-2"
+            />
           </div>
         ))}
       </div>
