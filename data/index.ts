@@ -281,6 +281,23 @@ export const works = {
       iconLists: ["/re.svg", "/tail.svg", "/icon_github.png"],
       link: "https://verdantvibe-amethystdesign.vercel.app/",
     },
+    {
+      id: 4,
+      project: "Cultural Dragon",
+      description:
+        "A creative sharing platform where users can upload works to share vision and let others connect, appreciate, and support it through votes. Using React.js, Next.js, Tailwind CSS, Sanity.io, and Sentry.io",
+      img: "we-CulturalDragon.png",
+      iconLists: [
+        "/re.svg",
+        "/tail.svg",
+        "/ts.svg",
+        "/next.svg",
+        "/logo-sentry.svg",
+        "/logo-sanity.png",
+        "/icon_github.png",
+      ],
+      link: "https://culturaldragon.vercel.app/",
+    },
   ],
   resource: [
     {
@@ -366,6 +383,20 @@ export const works = {
       img: "/logo-Vercel-grey.svg",
       nameImg: "/NameVercel.svg",
       nameImgLength: 70,
+    },
+    {
+      id: 9,
+      name: "sanity",
+      img: "/logo-sanity.png",
+      nameImg: "/name-Sanity.svg",
+      nameImgLength: 70,
+    },
+    {
+      id: 10,
+      name: "sentry",
+      img: "/logo-sentry.svg",
+      nameImg: "/name-Sentry.svg",
+      nameImgLength: 80,
     },
   ],
 };
@@ -592,7 +623,8 @@ export const footerInfo = {
   },
   builder: {
     desc: "Reach out to me today and I can work with you to achieve your goals.",
-    iconUrl: "https://avatars.githubusercontent.com/u/114815448",
+    iconUrl:
+      "https://raw.githubusercontent.com/AmethystDesign/media-assets/refs/heads/main/AD-logo-p.svg",
     organization: "Amethyst Design",
     email: "amethystdesign@gmail.com",
     publishDate: "2025",

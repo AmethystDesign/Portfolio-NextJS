@@ -9,7 +9,7 @@ export const InfiniteMovingCases = ({
   items,
   layoutSetting,
   direction = "left",
-  speed = "normal",
+  speed = "fast",
   pauseOnHover = true,
   className,
 }: {
