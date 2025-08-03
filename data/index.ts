@@ -125,7 +125,7 @@ export const workExperiences = {
         "/tail.svg",
         "/ts.svg",
         "/next.svg",
-        "/icon_github.png",
+        "/icon_github.svg",
         "/fm.svg",
       ],
       link: "https://profolio-amethystdesign.vercel.app",
@@ -139,7 +139,7 @@ export const workExperiences = {
       img: "/we-Verifone-f1.png",
       iconLists: [
         "/VS-icon.svg",
-        "/icon_github.png",
+        "/icon_github.svg",
         "/dock.svg",
         "/icon-cs.svg",
       ], //, "/stream.svg"
@@ -260,7 +260,7 @@ export const works = {
         "/tail.svg",
         "/ts.svg",
         "/next.svg",
-        "/icon_github.png",
+        "/icon_github.svg",
       ],
       link: "https://portfolio-amethystdesign.vercel.app/",
     },
@@ -275,7 +275,7 @@ export const works = {
         "/tail.svg",
         "/ts.svg",
         "/next.svg",
-        "/icon_github.png",
+        "/icon_github.svg",
         "/fm.svg",
       ],
       link: "https://brainwave-amethystdesign.vercel.app/",
@@ -286,7 +286,7 @@ export const works = {
       description:
         "A user-friendly online shopping platform that allows customers to browse products, add them to a cart, and seamlessly manage their purchases with a smooth checkout experience.",
       img: "we-VerdantVibe.png",
-      iconLists: ["/re.svg", "/tail.svg", "/icon_github.png"],
+      iconLists: ["/re.svg", "/tail.svg", "/icon_github.svg"],
       link: "https://verdantvibe-amethystdesign.vercel.app/",
     },
     {
@@ -302,7 +302,7 @@ export const works = {
         "/next.svg",
         "/logo-sentry.svg",
         "/logo-sanity.png",
-        "/icon_github.png",
+        "/icon_github.svg",
       ],
       link: "https://culturaldragon.vercel.app/",
     },
@@ -312,7 +312,7 @@ export const works = {
       description:
         "A creative mobile app that users can search for movies, view movie details, and add them to a list. Using React.js, Tailwind CSS, Appwrite",
       img: "MovieApp.png",
-      iconLists: ["/re.svg", "/tail.svg", "/app.svg", "/icon_github.png"],
+      iconLists: ["/re.svg", "/tail.svg", "/app.svg", "/icon_github.svg"],
       link: "",
     },
     {
@@ -321,7 +321,7 @@ export const works = {
       description:
         "A user-friendly app designed to help users build habits and visualize their progress. Using React.js, Appwrite",
       img: "HabitTracker.png",
-      iconLists: ["/re.svg", "/app.svg", "/icon_github.png"],
+      iconLists: ["/re.svg", "/app.svg", "/icon_github.svg"],
       link: "",
     },
     {
@@ -330,7 +330,7 @@ export const works = {
       description:
         "A mobile app that helps users prepare for exams by practicing with their personalized question sets. Using React.js, Appwrite",
       img: "test.png",
-      iconLists: ["/re.svg", "/icon_github.png"],
+      iconLists: ["/re.svg", "/icon_github.svg"],
       link: "",
     },
   ],
@@ -348,7 +348,7 @@ export const skills = {
     {
       id: 2,
       name: "GitHub",
-      img: "/icon_github.png",
+      img: "/icon_github.svg",
       nameImg: "/GitHubName.svg",
       nameImgLength: 70,
     },
@@ -411,7 +411,7 @@ export const skills = {
     {
       id: 8,
       name: "Vercel",
-      img: "/logo-Vercel-grey.svg",
+      img: "/logo-Vercel-W.svg",
       nameImg: "/NameVercel.svg",
       nameImgLength: 70,
     },

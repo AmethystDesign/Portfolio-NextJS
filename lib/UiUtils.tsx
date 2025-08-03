@@ -11,14 +11,14 @@ export const ListIcons = ({ iconLists }: { iconLists: string[] }) => {
             key={index}
             className="border border-white/[.2] rounded-full bg-black lg:w-12 lg:h-12 w-8 h-8 flex justify-center items-center"
             style={{
-              transform: `translateX(-${5 * index + 2}px)`,
+              transform: `translateX(-${-2 * index + 2}px)`,
             }}
           >
             <img
               src={icon}
               alt="icon"
-              // width={"20px"}
-              // height={"20px"}
+              width={"20px"}
+              height={"20px"}
               className="p-2"
             />
           </div>
