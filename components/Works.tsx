@@ -2,12 +2,13 @@
 
 import React from "react";
 
-import { works } from "@/data";
+import { works, skills } from "@/data";
 import { TextGenerateTwoColors } from "./ui/TextGenerateEffect";
 import { InfiniteMovingCases } from "./ui/InfiniteShowcase";
 
 const Works = () => {
-  const { config, layoutSetting, data, resource } = works;
+  const { config, layoutSetting, data } = works;
+  const { resource } = skills;
   return (
     <section id="works" className="py-20">
       <h1 className="heading">

@@ -2,14 +2,18 @@ import { m } from "framer-motion";
 
 export const navItems = [
   { name: "About", link: "#about" },
-  // { name: "Projects", link: "#projects" },
-  { name: "Experiences", link: "#workExperience" },
+  { name: "Projects", link: "#projects" },
+  { name: "Experiences", link: "#workExperiences" },
   // { name: "Testimonials", link: "#testimonials" },
   { name: "Certifications", link: "#certifications" },
   { name: "Contact", link: "#contact" },
 ];
 
 export const commonTitleColors = ["text-purple", "dark:text-white text-black"];
+
+export const siteConfig = {
+  infiniteShowcase: "WorkExperiences", // or "Works"
+};
 
 export const heroInfo = {
   name: "Jun L",
@@ -28,7 +32,7 @@ export const gridItems = [
     id: 1,
     template: "FullImageBG",
     title:
-      "Passionate software engineer with 10+ years of experience turning complex ideas into real-world applications. I specialize in C#.NET, React.js, and Next.js, with a strong focus on building real-time, multithreaded systems - especially in the retail and payment solutions space. \n\nI love solving problems through clean, efficient code and have a deep appreciation for OOP, algorithms, and scalable architecture. Whether it’s designing applications or debugging tough issues, I bring a detail-driven mindset and a passion for building reliable, high-quality software that makes an impact.",
+      "Passionate software engineer with 15+ years of experience turning complex ideas into real-world applications. I specialize in C#.NET, React.js, and Next.js, with a strong focus on building real-time, multithreaded systems - especially in the retail and payment solutions space. \n\nI love solving problems through clean, efficient code and have a deep appreciation for OOP, algorithms, and scalable architecture. Whether it’s designing applications or debugging tough issues, I bring a detail-driven mindset and a passion for building reliable, high-quality software that makes an impact.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[50vh]",
     imgClassName: "w-full h-full",
@@ -52,7 +56,7 @@ export const gridItems = [
     template: "Skills",
     title: "My main tech stack",
     description: "I constantly try to improve",
-    items: "C#.NET,React.JS,TypeScript,Next.JS,Python,EMV,DevOps,FrontEnd",
+    items: "C#.NET,React.JS,TypeScript,Next.JS,Python,EMV,DevOps,FullStack",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2 lg:min-h-[25vh]",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -101,15 +105,19 @@ export const workExperiences = {
     title: "Work experiences",
     secondFontColorIndexList: [1],
     fontColors: ["text-blue-500", "dark:text-white text-black"],
-    // fontColors: commonTitleColors,
+  },
+  layoutSetting: {
+    boardClassName: "sm:max-[300px] md:max-[600px] lg:max-w-[800px]",
+    imgMaxSize: [380, 380],
+    descWidth: "sm:max-w-[150px] md:max-w-[400px] lg:max-w-[500px]",
   },
   data: [
     {
       id: 1,
       company: "Amethyst Design",
-      title: "Full Stack Website Developer",
+      title: "Full Stack Website and Mobile App Developer",
       responsibility:
-        "Responsible for designing, developing, and maintaining visually appealing and user-centric websites.",
+        "Responsible for designing, developing, and maintaining visually appealing and user-centric websites and mobile app.",
       img: "/we-amethystdesign-f2.png",
       // iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg"],
       iconLists: [
@@ -125,7 +133,7 @@ export const workExperiences = {
     {
       id: 2,
       company: "Verifone Inc. Canada",
-      title: "Senior Software Engineer",
+      title: "Software Engineer",
       responsibility:
         "Involved in design, development, debugging and maintenance of payment solution for processing EMV and MSR transactions.",
       img: "/we-Verifone-f1.png",
@@ -147,16 +155,16 @@ export const workExperiences = {
       iconLists: ["/VS-icon.svg", "/icon-cs.svg"], //, "/tail.svg", "/ts.svg", "/three.svg"
       link: "http://info.jitterbit.com/ebridge-sage-guide.html",
     },
-    {
-      id: 4,
-      company: "WS & Company Ltd.",
-      title: "Application Developer and Technical Supporter",
-      responsibility:
-        "Designed and developed the rk-Stores management system, involved in system analysis, development and maintenance. ",
-      img: "/we-WScompany-f1.png",
-      iconLists: ["/VS-icon.svg"], //, "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"
-      link: "http://www.wsandcompany.com/",
-    },
+    // {
+    //   id: 4,
+    //   company: "WS & Company Ltd.",
+    //   title: "Application Developer and Technical Supporter",
+    //   responsibility:
+    //     "Designed and developed the rk-Stores management system, involved in system analysis, development and maintenance. ",
+    //   img: "/we-WScompany-f1.png",
+    //   iconLists: ["/VS-icon.svg"], //, "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"
+    //   link: "http://www.wsandcompany.com/",
+    // },
   ],
 };
 
@@ -298,7 +306,37 @@ export const works = {
       ],
       link: "https://culturaldragon.vercel.app/",
     },
+    {
+      id: 5,
+      project: "Movie App",
+      description:
+        "A creative mobile app that users can search for movies, view movie details, and add them to a list. Using React.js, Tailwind CSS, Appwrite",
+      img: "MovieApp.png",
+      iconLists: ["/re.svg", "/tail.svg", "/app.svg", "/icon_github.png"],
+      link: "",
+    },
+    {
+      id: 6,
+      project: "Habit Tracker App",
+      description:
+        "A user-friendly app designed to help users build habits and visualize their progress. Using React.js, Appwrite",
+      img: "HabitTracker.png",
+      iconLists: ["/re.svg", "/app.svg", "/icon_github.png"],
+      link: "",
+    },
+    {
+      id: 6,
+      project: "Test Practice App",
+      description:
+        "A mobile app that helps users prepare for exams by practicing with their personalized question sets. Using React.js, Appwrite",
+      img: "test.png",
+      iconLists: ["/re.svg", "/icon_github.png"],
+      link: "",
+    },
   ],
+};
+
+export const skills = {
   resource: [
     {
       id: 1,
@@ -340,13 +378,6 @@ export const works = {
     //   name: "cloudinary",
     //   img: "/cloud.svg",
     //   nameImg: "/cloudName.svg",
-    //   nameImgLength: 140,
-    // },
-    // {
-    //   id: 3,
-    //   name: "appwrite",
-    //   img: "/app.svg",
-    //   nameImg: "/appName.svg",
     //   nameImgLength: 140,
     // },
     // {
@@ -397,6 +428,20 @@ export const works = {
       img: "/logo-sentry.svg",
       nameImg: "/name-Sentry.svg",
       nameImgLength: 80,
+    },
+    {
+      id: 11,
+      name: "appwrite",
+      img: "/app.svg",
+      nameImg: "/appName.svg",
+      nameImgLength: 100,
+    },
+    {
+      id: 12,
+      name: "PostgreSQL",
+      img: "/postgreSQL.svg",
+      nameImg: "/namePostgreSQL.svg",
+      nameImgLength: 120,
     },
   ],
 };

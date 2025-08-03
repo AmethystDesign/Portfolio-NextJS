@@ -4,8 +4,9 @@ import Grid from "@/components/Grid";
 import Footer from "@/components/Footer";
 import FloatingNav from "@/components/ui/FloatingNavbar";
 import Certification from "@/components/Certification";
+import Works from "@/components/Projects";
+// import Works from "@/components/Works";
 import WorkExperience from "@/components/WorkExperience";
-import Works from "@/components/Works";
 import Approach from "@/components/Approach";
 const Home = () => {
   return (
@@ -14,8 +15,8 @@ const Home = () => {
         <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
-        <WorkExperience />
         <Works />
+        <WorkExperience />
         <Certification />
         <Approach />
         <Footer />
