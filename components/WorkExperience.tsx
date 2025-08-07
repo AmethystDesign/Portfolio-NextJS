@@ -34,12 +34,18 @@ const WorkExperience = () => {
             <React.Fragment key={item.id}>
               <div className="flex md:max-w-60 max-w-32 gap-2">
                 <img src={item.img} alt={item.name} className="md:w-10 w-5" />
-                <img
-                  src={item.nameImg}
-                  alt={item.name}
-                  width={item.nameImgLength}
-                  // className="md:w-24 w-20"
-                />
+                {item.nameImg ? (
+                  <img
+                    src={item.nameImg}
+                    alt={item.name}
+                    width={item.nameImgLength}
+                    // className="md:w-24 w-20"
+                  />
+                ) : (
+                  <text className="md:text-2xl text-xl align-bottom">
+                    {item.name}
+                  </text>
+                )}
               </div>
             </React.Fragment>
           ))}

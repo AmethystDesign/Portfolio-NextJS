@@ -27,7 +27,7 @@ const Works = () => {
               <PinContainer title={item.project} href={item.link}>
                 {/* <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10"> //oldver version */}
                 {/* <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10"> //new version */}
-                <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
+                <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] lg:w-[600px] lg:h-[48vh] overflow-hidden sm:h-[40vh] h-[40vh] mb-10">
                   <div
                     className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                     style={{ backgroundColor: "#13162D" }}

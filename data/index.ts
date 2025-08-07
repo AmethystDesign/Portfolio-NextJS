@@ -333,6 +333,21 @@ export const works = {
       iconLists: ["/re.svg", "/icon_github.svg"],
       link: "",
     },
+    {
+      id: 7,
+      project: "Recipe App",
+      description:
+        "A modern recipe app that lets home cooks and food lovers discover, save, and customize their favorite meals. Whether you're a beginner or a seasoned chef, it makes cooking easier and more fun. Using React.js, Neon, Render, and Clerk",
+      img: "recipe.png",
+      iconLists: [
+        "/re.svg",
+        "/icon_github.svg",
+        "/logoNeon.png",
+        "/logoClerk.png",
+        "/logoRender.svg",
+      ],
+      link: "",
+    },
   ],
 };
 
@@ -441,6 +456,27 @@ export const skills = {
       name: "PostgreSQL",
       img: "/postgreSQL.svg",
       nameImg: "/namePostgreSQL.svg",
+      nameImgLength: 120,
+    },
+    {
+      id: 13,
+      name: "Render",
+      img: "/logoRender.svg",
+      nameImg: "",
+      nameImgLength: 120,
+    },
+    {
+      id: 12,
+      name: "Neon",
+      img: "/logoNeon.png",
+      nameImg: "",
+      nameImgLength: 120,
+    },
+    {
+      id: 12,
+      name: "Clerk",
+      img: "/logoClerk.png",
+      nameImg: "",
       nameImgLength: 120,
     },
   ],
