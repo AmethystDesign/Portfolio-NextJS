@@ -338,7 +338,7 @@ export const works = {
       project: "Recipe App",
       description:
         "A modern recipe app that lets home cooks and food lovers discover, save, and customize their favorite meals. Whether you're a beginner or a seasoned chef, it makes cooking easier and more fun. Using React.js, Neon, Render, and Clerk",
-      img: "recipe.png",
+      img: "Recipe.png",
       iconLists: [
         "/re.svg",
         "/icon_github.svg",
