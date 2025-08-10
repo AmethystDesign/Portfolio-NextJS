@@ -308,30 +308,12 @@ export const works = {
     },
     {
       id: 5,
-      project: "Movie App",
+      project: "Amethyst Design",
       description:
-        "A creative mobile app that users can search for movies, view movie details, and add them to a list. Using React.js, Tailwind CSS, Appwrite",
-      img: "MovieApp.png",
-      iconLists: ["/re.svg", "/tail.svg", "/app.svg", "/icon_github.svg"],
-      link: "",
-    },
-    {
-      id: 6,
-      project: "Habit Tracker App",
-      description:
-        "A user-friendly app designed to help users build habits and visualize their progress. Using React.js, Appwrite",
-      img: "HabitTracker.png",
-      iconLists: ["/re.svg", "/app.svg", "/icon_github.svg"],
-      link: "",
-    },
-    {
-      id: 6,
-      project: "Test Practice App",
-      description:
-        "A mobile app that helps users prepare for exams by practicing with their personalized question sets. Using React.js, Appwrite",
-      img: "test.png",
-      iconLists: ["/re.svg", "/icon_github.svg"],
-      link: "",
+        "A modern one-page site presenting AmethystDesign’s vision, services, pricing, and work, with a clear call-to-action. Using React.js, Tailwind CSS",
+      img: "LandingPage.png",
+      iconLists: ["/re.svg", "/tail.svg", "/icon_github.svg"],
+      link: "https://amethystdesign.vercel.app/",
     },
     {
       id: 7,
@@ -346,6 +328,33 @@ export const works = {
         "/logoClerk.png",
         "/logoRender.svg",
       ],
+      link: "",
+    },
+    {
+      id: 8,
+      project: "Movie App",
+      description:
+        "A creative mobile app that users can search for movies, view movie details, and add them to a list. Using React.js, Tailwind CSS, Appwrite",
+      img: "MovieApp.png",
+      iconLists: ["/re.svg", "/tail.svg", "/app.svg", "/icon_github.svg"],
+      link: "",
+    },
+    {
+      id: 9,
+      project: "Habit Tracker App",
+      description:
+        "A user-friendly app designed to help users build habits and visualize their progress. Using React.js, Appwrite",
+      img: "HabitTracker.png",
+      iconLists: ["/re.svg", "/app.svg", "/icon_github.svg"],
+      link: "",
+    },
+    {
+      id: 10,
+      project: "Test Practice App",
+      description:
+        "A mobile app that helps users prepare for exams by practicing with their personalized question sets. Using React.js, Appwrite",
+      img: "test.png",
+      iconLists: ["/re.svg", "/icon_github.svg"],
       link: "",
     },
   ],
