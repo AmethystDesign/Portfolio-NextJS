@@ -336,6 +336,7 @@ export const works = {
       description:
         "A creative mobile app that users can search for movies, view movie details, and add them to a list. Using React.js, Tailwind CSS, Appwrite",
       img: "MovieApp.png",
+      isHalfHeight: true,
       iconLists: ["/re.svg", "/tail.svg", "/app.svg", "/icon_github.svg"],
       link: "",
     },
@@ -345,6 +346,7 @@ export const works = {
       description:
         "A user-friendly app designed to help users build habits and visualize their progress. Using React.js, Appwrite",
       img: "HabitTracker.png",
+      isHalfHeight: true,
       iconLists: ["/re.svg", "/app.svg", "/icon_github.svg"],
       link: "",
     },
@@ -354,6 +356,7 @@ export const works = {
       description:
         "A mobile app that helps users prepare for exams by practicing with their personalized question sets. Using React.js, Appwrite",
       img: "test.png",
+      isHalfHeight: true,
       iconLists: ["/re.svg", "/icon_github.svg"],
       link: "",
     },

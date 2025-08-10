@@ -21,13 +21,23 @@ const Works = () => {
             <div
               // className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"  //older version
               // className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"   //new version
-              className="sm:h-[41rem] h-[32rem] lg:min-h-[48.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]" //new version
+              className={`flex items-center justify-center sm:w-[570px] w-[80vw] ${
+                item.isHalfHeight
+                  ? "h-[23rem] sm:h-[32rem]"
+                  : "h-[34rem] sm:h-[46rem] lg:min-h-[53rem] "
+              }`} //new version
               key={item.id}
             >
               <PinContainer title={item.project} href={item.link}>
                 {/* <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10"> //oldver version */}
                 {/* <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10"> //new version */}
-                <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] lg:w-[600px] lg:h-[48vh] overflow-hidden sm:h-[40vh] h-[40vh] mb-10">
+                <div
+                  className={`relative flex items-center justify-center mb-10 sm:w-[570px] w-[80vw] lg:w-[600px] overflow-hidden ${
+                    item.isHalfHeight
+                      ? "h-[12rem] sm:h-[26vh] lg:h-[26vh]"
+                      : "h-[23rem] sm:h-[49vh] lg:h-[52vh]"
+                  }`}
+                >
                   <div
                     className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                     style={{ backgroundColor: "#13162D" }}

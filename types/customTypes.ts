@@ -73,6 +73,7 @@ export type ProjectInfo = {
   project: string;
   description: string;
   img: string;
+  isHalfHeight?: boolean; // Optional property to control height
   iconLists: string[];
   link: string;
 };
