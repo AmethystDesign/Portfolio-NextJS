@@ -316,6 +316,21 @@ export const works = {
       link: "https://amethystdesign.vercel.app/",
     },
     {
+      id: 6,
+      project: "AD eCommerce",
+      description:
+        "A modern e-commerce platform that lets customers browse products, shop online, and complete purchases through secure, seamless payment options. Using Next.js 15, Stripe, Tailwind CSS",
+      img: "we-eCommerce.png",
+      iconLists: [
+        "/re.svg",
+        "/tail.svg",
+        "/next-w.svg",
+        "/logo-stripe.jpeg",
+        "/icon_github.svg",
+      ],
+      link: "https://ad-ecommerce.vercel.app/",
+    },
+    {
       id: 7,
       project: "Recipe App",
       description:
@@ -478,18 +493,25 @@ export const skills = {
       nameImgLength: 120,
     },
     {
-      id: 12,
+      id: 13,
       name: "Neon",
       img: "/logoNeon.png",
       nameImg: "",
       nameImgLength: 120,
     },
     {
-      id: 12,
+      id: 14,
       name: "Clerk",
       img: "/logoClerk.png",
       nameImg: "",
       nameImgLength: 120,
+    },
+    {
+      id: 15,
+      name: "stripe",
+      img: "/logo-stripe.jpeg",
+      nameImg: "/name-stripe.svg",
+      nameImgLength: 70,
     },
   ],
 };
