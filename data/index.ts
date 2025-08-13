@@ -324,7 +324,7 @@ export const works = {
       iconLists: [
         "/re.svg",
         "/tail.svg",
-        "/next-w.svg",
+        "/next.svg",
         "/logo-stripe.jpeg",
         "/icon_github.svg",
       ],

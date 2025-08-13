@@ -19,24 +19,20 @@ const Works = () => {
         <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
           {data.map((item: ProjectInfo) => (
             <div
-              // className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"  //older version
-              // className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"   //new version
               className={`flex items-center justify-center sm:w-[570px] w-[80vw] ${
                 item.isHalfHeight
-                  ? "h-[23rem] sm:h-[32rem]"
-                  : "h-[34rem] sm:h-[46rem] lg:min-h-[53rem] "
-              }`} //new version
+                  ? "h-[23rem] sm:h-[31rem] lg:min-h-[33rem]"
+                  : "h-[36rem] sm:h-[48rem] lg:min-h-[51rem] "
+              }`} // outside of the item box
               key={item.id}
             >
               <PinContainer title={item.project} href={item.link}>
-                {/* <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10"> //oldver version */}
-                {/* <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10"> //new version */}
                 <div
                   className={`relative flex items-center justify-center mb-10 sm:w-[570px] w-[80vw] lg:w-[600px] overflow-hidden ${
                     item.isHalfHeight
-                      ? "h-[12rem] sm:h-[26vh] lg:h-[26vh]"
-                      : "h-[23rem] sm:h-[49vh] lg:h-[52vh]"
-                  }`}
+                      ? "h-[12rem] sm:h-[17rem] lg:h-[19rem]"
+                      : "h-[24rem] sm:h-[35rem] lg:h-[37rem]"
+                  }`} // outside of the image box
                 >
                   <div
                     className="relative w-full h-full overflow-hidden lg:rounded-3xl"
