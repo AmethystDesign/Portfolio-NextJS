@@ -322,7 +322,6 @@ export const works = {
         "A modern e-commerce platform that lets customers browse products, shop online, and complete purchases through secure, seamless payment options. Using Next.js 15, Stripe, Tailwind CSS",
       img: "we-eCommerce.png",
       iconLists: [
-        "/re.svg",
         "/tail.svg",
         "/next.svg",
         "/logo-stripe.jpeg",
@@ -332,6 +331,23 @@ export const works = {
     },
     {
       id: 7,
+      project: "AI Meal Plans",
+      description:
+        "A full-stack AI SaaS web application built with Next.js 15, TailwindCSS, and TypeScript. It features robust authentication with role-based access control, secure Stripe integration for subscription and billing management, and a scalable database layer implemented with PostgreSQL and Prisma ORM. The architecture emphasizes modern responsive design, API extensibility, and production-grade performance.",
+      img: "we-MealPlans.png",
+      iconLists: [
+        "/tail.svg",
+        "/next.svg",
+        "/logo-stripe.jpeg",
+        "/logoNeon.png",
+        "/logoClerk.png",
+        "/logoPrisma.svg",
+        "/icon_github.svg",
+      ],
+      link: "https://ad-mealplan.vercel.app//",
+    },
+    {
+      id: 27,
       project: "Recipe App",
       description:
         "A modern recipe app that lets home cooks and food lovers discover, save, and customize their favorite meals. Whether you're a beginner or a seasoned chef, it makes cooking easier and more fun. Using React.js, Neon, Render, and Clerk",
@@ -346,7 +362,7 @@ export const works = {
       link: "",
     },
     {
-      id: 8,
+      id: 28,
       project: "Movie App",
       description:
         "A creative mobile app that users can search for movies, view movie details, and add them to a list. Using React.js, Tailwind CSS, Appwrite",
@@ -356,7 +372,7 @@ export const works = {
       link: "",
     },
     {
-      id: 9,
+      id: 29,
       project: "Habit Tracker App",
       description:
         "A user-friendly app designed to help users build habits and visualize their progress. Using React.js, Appwrite",
@@ -366,7 +382,7 @@ export const works = {
       link: "",
     },
     {
-      id: 10,
+      id: 30,
       project: "Test Practice App",
       description:
         "A mobile app that helps users prepare for exams by practicing with their personalized question sets. Using React.js, Appwrite",
@@ -511,6 +527,13 @@ export const skills = {
       name: "stripe",
       img: "/logo-stripe.jpeg",
       nameImg: "/name-stripe.svg",
+      nameImgLength: 70,
+    },
+    {
+      id: 17,
+      name: "Prisma",
+      img: "/logoPrisma.svg",
+      nameImg: "",
       nameImgLength: 70,
     },
   ],
