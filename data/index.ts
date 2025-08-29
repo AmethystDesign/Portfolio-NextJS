@@ -266,6 +266,23 @@ export const works = {
     },
     {
       id: 2,
+      project: "eShopping",
+      description:
+        "AD eShopping – your all-in-one online store. Browse products, manage favorites, shop securely, and track your orders with ease. Stay updated with our blog, pay safely, and receive instant invoices – shopping made simple and smart. Using React.js, Next.js, and Tailwind CSS.",
+      img: "we-eShopping.png",
+      iconLists: [
+        "/re.svg",
+        "/tail.svg",
+        "/logoClerk.png",
+        "/next.svg",
+        "/logo-sanity.png",
+        "/logoStripe.png",
+        "/icon_github.svg",
+      ],
+      link: "https://ad-eshopping.vercel.app//",
+    },
+    {
+      id: 3,
       project: "Brainwave",
       description:
         "Demonstrates the creation of modern websites featuring sleek parallax effects and bento box layouts — covering everything from elegant UI design to mobile-first principles, while sharpening React.js and Tailwind CSS skills.",
@@ -281,7 +298,7 @@ export const works = {
       link: "https://brainwave-amethystdesign.vercel.app/",
     },
     {
-      id: 3,
+      id: 4,
       project: "Verdant Vibe",
       description:
         "A user-friendly online shopping platform that allows customers to browse products, add them to a cart, and seamlessly manage their purchases with a smooth checkout experience.",
@@ -290,7 +307,7 @@ export const works = {
       link: "https://verdantvibe-amethystdesign.vercel.app/",
     },
     {
-      id: 4,
+      id: 5,
       project: "Cultural Dragon",
       description:
         "A creative sharing platform where users can upload works to share vision and let others connect, appreciate, and support it through votes. Using React.js, Next.js, Tailwind CSS, Sanity.io, and Sentry.io",
@@ -307,7 +324,7 @@ export const works = {
       link: "https://culturaldragon.vercel.app/",
     },
     {
-      id: 5,
+      id: 6,
       project: "Amethyst Design",
       description:
         "A modern one-page site presenting AmethystDesign’s vision, services, pricing, and work, with a clear call-to-action. Using React.js, Tailwind CSS",
@@ -316,7 +333,7 @@ export const works = {
       link: "https://amethystdesign.vercel.app/",
     },
     {
-      id: 6,
+      id: 7,
       project: "AD eCommerce",
       description:
         "A modern e-commerce platform that lets customers browse products, shop online, and complete purchases through secure, seamless payment options. Using Next.js 15, Stripe, Tailwind CSS",
@@ -330,7 +347,7 @@ export const works = {
       link: "https://ad-ecommerce.vercel.app/",
     },
     {
-      id: 7,
+      id: 8,
       project: "AI Meal Plans",
       description:
         "A full-stack AI SaaS web application built with Next.js 15, TailwindCSS, and TypeScript. It features robust authentication with role-based access control, secure Stripe integration for subscription and billing management, and a scalable database layer implemented with PostgreSQL and Prisma ORM. The architecture emphasizes modern responsive design, API extensibility, and production-grade performance.",
