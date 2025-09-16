@@ -265,7 +265,16 @@ export const works = {
       link: "https://portfolio-amethystdesign.vercel.app/",
     },
     {
-      id: 2,
+      id: 43,
+      project: "EverTrust",
+      description:
+        "This Figma UI design showcases the final interface for EverTrust, focusing on a clean, modern, and trustworthy aesthetic. The project includes wireframes, a comprehensive style guide, and high-fidelity mockups of key user flows, demonstrating a user-centric approach from concept to completion.",
+      img: "we-EverTrust.png",
+      iconLists: ["/logo-Figma.svg"],
+      link: "/EverTrust.pdf",
+    },
+    {
+      id: 44,
       project: "eShopping",
       description:
         "AD eShopping – your all-in-one online store. Browse products, manage favorites, shop securely, and track your orders with ease. Stay updated with our blog, pay safely, and receive instant invoices – shopping made simple and smart. Using React.js, Next.js, and Tailwind CSS.",
@@ -282,7 +291,7 @@ export const works = {
       link: "https://ad-eshopping.vercel.app//",
     },
     {
-      id: 3,
+      id: 45,
       project: "Brainwave",
       description:
         "Demonstrates the creation of modern websites featuring sleek parallax effects and bento box layouts — covering everything from elegant UI design to mobile-first principles, while sharpening React.js and Tailwind CSS skills.",
@@ -298,7 +307,7 @@ export const works = {
       link: "https://brainwave-amethystdesign.vercel.app/",
     },
     {
-      id: 4,
+      id: 46,
       project: "Verdant Vibe",
       description:
         "A user-friendly online shopping platform that allows customers to browse products, add them to a cart, and seamlessly manage their purchases with a smooth checkout experience.",
@@ -307,7 +316,7 @@ export const works = {
       link: "https://verdantvibe-amethystdesign.vercel.app/",
     },
     {
-      id: 5,
+      id: 47,
       project: "Cultural Dragon",
       description:
         "A creative sharing platform where users can upload works to share vision and let others connect, appreciate, and support it through votes. Using React.js, Next.js, Tailwind CSS, Sanity.io, and Sentry.io",
@@ -324,7 +333,7 @@ export const works = {
       link: "https://culturaldragon.vercel.app/",
     },
     {
-      id: 6,
+      id: 48,
       project: "Amethyst Design",
       description:
         "A modern one-page site presenting AmethystDesign’s vision, services, pricing, and work, with a clear call-to-action. Using React.js, Tailwind CSS",
@@ -333,7 +342,7 @@ export const works = {
       link: "https://amethystdesign.vercel.app/",
     },
     {
-      id: 7,
+      id: 49,
       project: "AD eCommerce",
       description:
         "A modern e-commerce platform that lets customers browse products, shop online, and complete purchases through secure, seamless payment options. Using Next.js 15, Stripe, Tailwind CSS",
@@ -347,7 +356,7 @@ export const works = {
       link: "https://ad-ecommerce.vercel.app/",
     },
     {
-      id: 8,
+      id: 50,
       project: "AI Meal Plans",
       description:
         "A full-stack AI SaaS web application built with Next.js 15, TailwindCSS, and TypeScript. It features robust authentication with role-based access control, secure Stripe integration for subscription and billing management, and a scalable database layer implemented with PostgreSQL and Prisma ORM. The architecture emphasizes modern responsive design, API extensibility, and production-grade performance.",
@@ -364,7 +373,7 @@ export const works = {
       link: "https://ad-mealplan.vercel.app//",
     },
     {
-      id: 27,
+      id: 96,
       project: "Recipe App",
       description:
         "A modern recipe app that lets home cooks and food lovers discover, save, and customize their favorite meals. Whether you're a beginner or a seasoned chef, it makes cooking easier and more fun. Using React.js, Neon, Render, and Clerk",
@@ -379,7 +388,7 @@ export const works = {
       link: "",
     },
     {
-      id: 28,
+      id: 97,
       project: "Movie App",
       description:
         "A creative mobile app that users can search for movies, view movie details, and add them to a list. Using React.js, Tailwind CSS, Appwrite",
@@ -389,7 +398,7 @@ export const works = {
       link: "",
     },
     {
-      id: 29,
+      id: 98,
       project: "Habit Tracker App",
       description:
         "A user-friendly app designed to help users build habits and visualize their progress. Using React.js, Appwrite",
@@ -399,7 +408,7 @@ export const works = {
       link: "",
     },
     {
-      id: 30,
+      id: 99,
       project: "Test Practice App",
       description:
         "A mobile app that helps users prepare for exams by practicing with their personalized question sets. Using React.js, Appwrite",
